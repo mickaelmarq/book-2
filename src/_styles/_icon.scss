@@ -24,6 +24,9 @@ i {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-link:before {
+  content: "\e9cb";
+}
 .icon-dribbble:before {
   content: "\eaa7";
 }

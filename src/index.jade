@@ -61,8 +61,28 @@ block content
             span.tag symfony
             span.tag gulp
             span.tag git
-    .two-face.separ
-      .two-face__left
-        .two-face__content
-      .two-face__right
-        .two-face__content
+    each val in [1, 2, 3, 4, 5]
+      .two-face.separ.work
+        .two-face__left
+          .two-face__content
+            .work__img-container
+              img(src="https://d13yacurqjgara.cloudfront.net/users/239301/screenshots/1788738/ligthhouse.png")
+              img(src="https://d13yacurqjgara.cloudfront.net/users/239301/screenshots/2498621/dribbbleshot.png")
+              img(src="https://d13yacurqjgara.cloudfront.net/users/239301/screenshots/2989587/box.png")
+        .two-face__right
+          .two-face__content
+            h3 
+              | TF1
+              a.link(href="#", target="_blank")
+                i.icon-link
+            p.description Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            h4 Client
+            p.tags
+              span.tag tf1
+            h4 Languages
+            p.tags
+              span.tag html
+              span.tag css
+              span.tag sass
+              span.tag less
+              span.tag javascript

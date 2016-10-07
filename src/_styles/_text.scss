@@ -5,6 +5,7 @@ h1{
   font-weight: normal;
   margin-bottom: $base-padding/3;
   margin-top: $base-padding;
+  @include smoothing;
 }
 
 h2{
@@ -13,6 +14,14 @@ h2{
   @include smoothing;
   font-weight: normal;
   margin-bottom: $base-padding/2;
+}
+
+h3{
+  font-family: 'bold', monospace;
+  font-size: 26px;
+  line-height: 32px;
+  color: $light;
+  @include smoothing;
 }
 
 h4{
@@ -30,9 +39,10 @@ h4{
 
 p, a{
   font-size: 18px;
+  line-height: 26px;
   font-family: 'regular', monospace;
   font-weight: normal;
-  margin-bottom: $base-padding/2;
+  margin-bottom: $base-padding/3;
 }
 
 p.tags{
@@ -50,6 +60,7 @@ a{
   display: block;
   text-decoration: none;
   transition: color $base-animation-duration;
+  @include transition(color $base-animation-duration ease-in, opacity $base-animation-duration ease-in);
   &.social{
     display: inline-block;
     font-size: 32px;

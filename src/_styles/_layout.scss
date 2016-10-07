@@ -20,6 +20,7 @@
   .two-face__content{
     padding-right: $base-padding;
     padding-left: $base-padding;
+    width: 500px;
     &.two-face__content--no-padding{
       padding: 0;
     }
@@ -36,6 +37,7 @@
   .two-face__left{
     text-align: right;
     .two-face__content{
+      margin-left: auto;
       @include animation(left 0.700s $ease-out-cubic);
     }
   }
@@ -51,7 +53,7 @@
     .two-face__left,
     .two-face__right{
       .two-face__content{
-        padding-top: $base-padding*2;
+        padding-top: $base-padding*2.5;
         &:before{
           font-family: 'regular', monospace;
           position: absolute;
