@@ -1,0 +1,84 @@
+//animation
+@-webkit-keyframes left {
+	0% {
+		@include transform(translateX(500px));
+    opacity: 0;
+	}
+	100% {
+		@include transform(translateX(0));
+    opacity: 1;
+	}
+}
+@-moz-keyframes left {
+  0% {
+		@include transform(translateX(500px));
+    opacity: 0;
+	}
+	100% {
+		@include transform(translateX(0));
+    opacity: 1;
+	}
+}
+@-o-keyframes left {
+  0% {
+		@include transform(translateX(500px));
+    opacity: 0;
+	}
+	100% {
+		@include transform(translateX(0));
+    opacity: 1;
+	}
+}
+@keyframes left {
+  0% {
+		@include transform(translateX(500px));
+    opacity: 0;
+	}
+	100% {
+		@include transform(translateX(0));
+    opacity: 1;
+	}
+}
+
+
+//animation
+@-webkit-keyframes right {
+	0% {
+		@include transform(translateX(-500px));
+    opacity: 0;
+	}
+	100% {
+		@include transform(translateX(0));
+    opacity: 1;
+	}
+}
+@-moz-keyframes right {
+  0% {
+		@include transform(translateX(-500px));
+    opacity: 0;
+	}
+	100% {
+		@include transform(translateX(0));
+    opacity: 1;
+	}
+}
+@-o-keyframes right {
+  0% {
+		@include transform(translateX(-500px));
+    opacity: 0;
+	}
+	100% {
+		@include transform(translateX(0));
+    opacity: 1;
+	}
+}
+@keyframes right {
+  0% {
+		@include transform(translateX(-500px));
+    opacity: 0;
+	}
+	100% {
+		@include transform(translateX(0));
+    opacity: 1;
+	}
+}
