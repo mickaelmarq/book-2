@@ -16,8 +16,17 @@
   position: relative;
   width: 100%;
   display: flex;
+  margin-bottom: $base-padding;
+  .two-face__content{
+    padding-right: $base-padding;
+    padding-left: $base-padding;
+    &.two-face__content--no-padding{
+      padding: 0;
+    }
+  }
   .two-face__left,
   .two-face__right{
+    position: relative;
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -26,20 +35,37 @@
   }
   .two-face__left{
     text-align: right;
-    .two-face__content{
-      padding-right: $base-padding;
-      &.two-face__content--no-padding{
-        padding: 0;
-      }
-    }
   }
   .two-face__right{
     background-color: $dark;
-    .two-face__content{
-      padding-left: $base-padding;
-      &.two-face__content--no-padding{
-        padding: 0;
+  }
+
+  &.separ{
+    margin-top: $base-padding*2;
+    padding-top: $base-padding*2;
+    .two-face__left,
+    .two-face__right{
+      overflow: visible;
+      &:before{
+        font-family: 'regular', monospace;
+        position: absolute;
+        top: -$base-padding*2.5;
+      }
+    }
+    .two-face__left{
+      &:before{
+        content: "-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_";
+        right: 0;
+        color: $primary-grey;
+      }
+    }
+    .two-face__right{
+      &:before{
+        content: "_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-";
+        left: 0;
+        color: $secondary-grey;
       }
     }
   }
+
 }

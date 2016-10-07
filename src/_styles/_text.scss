@@ -3,7 +3,7 @@ h1{
   font-size: 38px;
   letter-spacing: -0.04em;
   font-weight: normal;
-  margin-bottom: $base-padding/2;
+  margin-bottom: $base-padding/3;
   margin-top: $base-padding;
 }
 
@@ -12,7 +12,20 @@ h2{
   font-size: 22px;
   @include smoothing;
   font-weight: normal;
-  margin-bottom: $base-padding*2;
+  margin-bottom: $base-padding/2;
+}
+
+h4{
+  font-size: 18px;
+  font-family: 'regular', monospace;
+  font-weight: normal;
+  margin-bottom: $base-padding/2;
+  &:before{
+    content: "/* ";
+  }
+  &:after{
+    content: " */";
+  }
 }
 
 p, a{
@@ -22,13 +35,24 @@ p, a{
   margin-bottom: $base-padding/2;
 }
 
+p.tags{
+  .tag{
+    &:after{
+      content: ", ";
+    }
+    &:last-child:after{
+      content: "";
+    }
+  }
+}
+
 a{
+  display: block;
   text-decoration: none;
   transition: color $base-animation-duration;
   &.social{
-    display: block;
+    display: inline-block;
     font-size: 32px;
-    margin-top: $base-padding;
     &:hover{
       opacity: 0.6;
     }
@@ -39,8 +63,16 @@ a{
   h1, h2{
     color: $primary-color;
   }
-  p, a{
+  p, a, h4{
     color: $primary-grey;
+  }
+  p.tags{
+    .tag{
+      color: $primary-color;
+      &:after{
+        color: $primary-grey;
+      }
+    }
   }
   a:hover{
     color: $primary-color;
@@ -54,8 +86,16 @@ a{
   h1, h2{
     color: $secondary-color;
   }
-  p, a{
+  p, a, h4{
     color: $secondary-grey;
+  }
+  p.tags{
+    .tag{
+      color: $secondary-color;
+      &:after{
+        color: $light;
+      }
+    }
   }
   a:hover{
     color: $secondary-color;

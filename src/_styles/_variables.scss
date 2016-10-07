@@ -14,5 +14,11 @@ $secondary-grey:      rgba($light, 0.4);
 //SPACE
 $base-padding:        20px;
 
+$spacer-n : 0;
+$spacer-t : $base-padding/2;
+$spacer-s : $base-padding;
+$spacer-m : $base-padding * 2;
+$spacer-l : $base-padding * 4;
+
 //ANIM
 $base-animation-duration: 0.3s;
