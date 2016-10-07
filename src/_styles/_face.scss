@@ -13,6 +13,14 @@
   @include media($screen) {
     width: 160px;
   }
+  @include media($mobile) {
+    margin-top: $base-padding*1;
+    width: 107px;
+    height: 147px;
+    &:hover{
+      width: 107px;
+    }
+  }
 }
 
 .two-face__right{

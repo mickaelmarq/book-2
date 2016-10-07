@@ -6,6 +6,10 @@ h1{
   margin-bottom: $base-padding/3;
   margin-top: $base-padding;
   @include smoothing;
+  @include media($mobile) {
+    font-size: 30px;
+    margin-bottom: $base-padding/3;
+  }
 }
 
 h2{
@@ -14,13 +18,18 @@ h2{
   @include smoothing;
   font-weight: normal;
   margin-bottom: $base-padding/2;
+  @include media($screen) {
+    margin-bottom: $base-padding;
+  }
+  @include media($mobile) {
+    font-size: 18px;
+  }
 }
 
 h3{
   font-family: 'bold', monospace;
   font-size: 26px;
   line-height: 32px;
-  color: $light;
   @include smoothing;
 }
 
@@ -35,6 +44,12 @@ h4{
   &:after{
     content: " */";
   }
+  @include media($screen) {
+    margin-top: $base-padding;
+  }
+  @include media($mobile) {
+    margin-bottom: $base-padding/5;
+  }
 }
 
 p, a{
@@ -43,6 +58,11 @@ p, a{
   font-family: 'regular', monospace;
   font-weight: normal;
   margin-bottom: $base-padding/3;
+  @include media($mobile) {
+    font-size: 16px;
+    margin-bottom: $base-padding/5;
+    line-height: 22px;
+  }
 }
 
 p.tags{
@@ -64,6 +84,11 @@ a{
   &.social{
     display: inline-block;
     font-size: 32px;
+    @include media($screen) {
+      margin-left: $base-padding/2;
+      margin-right: $base-padding/2;
+      margin-top: $base-padding;
+    }
     &:hover{
       opacity: 0.6;
     }
@@ -72,6 +97,9 @@ a{
 
 .two-face__left{
   h1, h2{
+    color: $primary-color;
+  }
+  h3{
     color: $primary-color;
   }
   p, a, h4{
@@ -96,6 +124,9 @@ a{
 .two-face__right{
   h1, h2{
     color: $secondary-color;
+  }
+  h3{
+    color: $light;
   }
   p, a, h4{
     color: $secondary-grey;

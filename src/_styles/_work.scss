@@ -41,6 +41,15 @@
             margin-right: $base-padding;
           }
         }
+        @include media($mobile) {
+          display: block;
+          overflow: hidden;
+          img{
+            width: 100%;
+            height: inherit;
+            margin-top: $base-padding/2;
+          }
+        }
       }
     }
   }

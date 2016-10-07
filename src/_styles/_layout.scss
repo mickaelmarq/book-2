@@ -23,7 +23,11 @@
   .two-face__content{
     padding-right: $base-padding;
     padding-left: $base-padding;
-    width: 500px;
+    width: 450px;
+    .info{
+      padding-left: $base-padding;
+      padding-right: $base-padding;
+    }
     &.two-face__content--no-padding{
       padding: 0;
     }

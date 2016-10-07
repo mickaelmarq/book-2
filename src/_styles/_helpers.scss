@@ -51,7 +51,7 @@
 //Responsive helpers
 .sims{
   @include media($main) {
-    display: none;
+    display: none !important;
   }
   @include media($screen) {
     display: auto;
