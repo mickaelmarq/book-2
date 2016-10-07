@@ -20,5 +20,15 @@ $spacer-s : $base-padding;
 $spacer-m : $base-padding * 2;
 $spacer-l : $base-padding * 4;
 
+$screen-width         : 980px;
+$tablet-width         : 768px;
+$mobile-width         : 480px;
+
+$main                 : new-breakpoint(min-width $screen-width);
+$screen               : new-breakpoint(max-width $screen-width 9);
+$min-screen           : new-breakpoint(min-width $tablet-width);
+$tablet               : new-breakpoint(max-width $tablet-width 6);
+$mobile               : new-breakpoint(max-width $mobile-width 3);
+
 //ANIM
 $base-animation-duration: 0.3s;

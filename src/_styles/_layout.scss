@@ -9,6 +9,9 @@
   left: 50%;
   right: 0;
   bottom: 0;
+  @include media($screen) {
+    display: none;
+  }
 }
 
 .two-face{
@@ -23,6 +26,9 @@
     width: 500px;
     &.two-face__content--no-padding{
       padding: 0;
+    }
+    @include media($screen) {
+      width: 100%;
     }
   }
   .two-face__left,
@@ -40,11 +46,17 @@
       margin-left: auto;
       @include animation(left 0.700s $ease-out-cubic);
     }
+    @include media($screen) {
+      text-align: center;
+    }
   }
   .two-face__right{
     background-color: $dark;
     .two-face__content{
       @include animation(right 0.700s $ease-out-cubic);
+    }
+    @include media($screen) {
+      display: none;
     }
   }
 
@@ -66,6 +78,11 @@
         content: "-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_";
         right: 0;
         color: $primary-grey;
+        @include media($screen) {
+          content: "-_-_-_-_-_-_-_-_-_-_-";
+          left: 0;
+          text-align: center;
+        }
       }
     }
     .two-face__right .two-face__content{

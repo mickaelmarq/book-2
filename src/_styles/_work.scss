@@ -17,27 +17,29 @@
       padding-right: 0;
       padding-left: 0;
       width: 100%;
-      // &:after{
-      //   content: "";
-      //   position: absolute;
-      //   top: 50px;
-      //   bottom: 0;
-      //   left: 0;
-      //   width: 60px;
-      //   @include background-image(linear-gradient(to right, rgba($dark,0.3) 0, rgba($dark,0) 100%));
-      // }
       .work__img-container{
         padding-left: $base-padding;
         padding-right: $base-padding;
-        display: flex;
         overflow-x: scroll;
         -webkit-overflow-scrolling: touch;
-        flex-direction: row-reverse;
-        align-self: auto;
+        @include display(flex);
+        @include flex-direction(row-reverse);
+        &:after{
+          content: ".";
+          opacity: 0;
+          width: $base-padding;
+        }
         img{
           border: $base-padding/2 solid $grey;
           height: 360px;
           margin-left: $base-padding;
+        }
+        @include media($screen) {
+          flex-direction: row;
+          img{
+            margin-left: 0;
+            margin-right: $base-padding;
+          }
         }
       }
     }

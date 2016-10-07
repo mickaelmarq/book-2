@@ -10,6 +10,9 @@
   &:hover{
     width: 160px;
   }
+  @include media($screen) {
+    width: 160px;
+  }
 }
 
 .two-face__right{

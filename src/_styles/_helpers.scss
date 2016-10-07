@@ -45,3 +45,15 @@
 .prs { padding-right: $spacer-s !important }
 .prm { padding-right: $spacer-m !important }
 .prl { padding-right: $spacer-l !important }
+
+
+
+//Responsive helpers
+.sims{
+  @include media($main) {
+    display: none;
+  }
+  @include media($screen) {
+    display: auto;
+  }
+}
