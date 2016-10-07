@@ -1,0 +1,45 @@
+.wrapper{
+  position: relative;
+}
+
+.background{
+  background-color: $dark;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  right: 0;
+  bottom: 0;
+}
+
+.two-face{
+  z-index: 1;
+  position: relative;
+  width: 100%;
+  display: flex;
+  .two-face__left,
+  .two-face__right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    overflow: hidden;
+  }
+  .two-face__left{
+    text-align: right;
+    .two-face__content{
+      padding-right: $base-padding;
+      &.two-face__content--no-padding{
+        padding: 0;
+      }
+    }
+  }
+  .two-face__right{
+    background-color: $dark;
+    .two-face__content{
+      padding-left: $base-padding;
+      &.two-face__content--no-padding{
+        padding: 0;
+      }
+    }
+  }
+}

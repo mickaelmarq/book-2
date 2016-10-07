@@ -3,13 +3,31 @@ extends _layouts/base
 include _modules/link/link
 
 block content
-  .container
-    .yeogurt-info
-      h1 Welcome to Yeogurt!
-      p.
-        Take a look at the
-        #[+link({text: 'documentation'})(href='https://github.com/larsonjj/generator-yeogurt#yeogurt-generator---')]
-        and start mixing up something awesome.
-      p
-        img.logo(src="images/yeogurt-swirl.png", width="75px")
-  code.version v1.5.3
+  .wrapper
+    .background
+    .two-face
+      .two-face__left
+        .two-face__content.two-face__content--no-padding
+          img.face(src='images/face.svg')
+      .two-face__right
+        .two-face__content.two-face__content--no-padding
+          img.face(src='images/face-ascii.svg')
+    .two-face
+      .two-face__left
+        .two-face__content
+          h1 Mickaël
+          h2 UI / Graphic Designer
+          p Freelance
+          p Bordeaux
+          a(href="tel:+33609428050") +336 09 42 80 50
+          a.social(href="https://dribbble.com/mickaelmarquez", target="_blank")
+            i.icon-dribbble
+      .two-face__right
+        .two-face__content
+          h1 Marquez
+          h2 Front-End Developer
+          p Remote
+          p Paris
+          a(href="mailto:marquez.mickael@gmail.com") marquez.mickael@gmail.com
+          a.social(href="https://github.com/mickaelmarq", target="_blank")
+            i.icon-github

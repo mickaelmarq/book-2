@@ -1,0 +1,19 @@
+.face{
+  margin-top: $base-padding*3;
+  width: 160px;
+  height: 220px;
+  width: 80px;
+  height: 220px;
+  object-fit: cover;
+  object-position: left;
+  transition: width $base-animation-duration;
+  &:hover{
+    width: 160px;
+  }
+}
+
+.two-face__right{
+  .face{
+    object-position: right;
+  }
+}

@@ -1,0 +1,19 @@
+@font-face {
+  font-family: 'bold';
+  font-weight: normal;
+  src: url('../fonts/mononoki-Bold.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/mononoki-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/mononoki-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/mononoki-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/mononoki-Bold.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: 'regular';
+  font-weight: normal;
+  src: url('../fonts/mononoki-Regular.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/mononoki-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/mononoki-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/mononoki-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/mononoki-Regular.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
