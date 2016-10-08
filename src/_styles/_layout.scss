@@ -65,11 +65,11 @@
   }
 
   &.separ{
-    margin-top: $base-padding*2;
+    margin-top: $base-padding*5.5;
     .two-face__left,
     .two-face__right{
       .two-face__content{
-        padding-top: $base-padding*2.5;
+        padding-top: $base-padding*6;
         &:before{
           font-family: 'regular', monospace;
           position: absolute;
