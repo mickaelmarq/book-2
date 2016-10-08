@@ -13,6 +13,8 @@
     margin-bottom: $base-padding;
   }
   .two-face__left{
+    z-index: 9;
+    overflow: visible;
     .two-face__content{
       padding-right: 0;
       padding-left: 0;
@@ -20,22 +22,29 @@
       .work__img-container{
         padding-left: $base-padding;
         padding-right: $base-padding;
+        cursor: ew-resize;
+        white-space: nowrap;
+        position: absolute;
+        left: 0;
+        width: 200%;
         overflow-x: scroll;
         -webkit-overflow-scrolling: touch;
-        @include display(flex);
-        @include flex-direction(row-reverse);
-        &:after{
-          content: ".";
-          opacity: 0;
-          width: $base-padding;
+        z-index: 99;
+        padding-right: 100%;
+        direction: rtl;
+        ::-webkit-scrollbar {
+            display: none;
         }
         img{
           border: $base-padding/2 solid $grey;
           height: 360px;
-          margin-left: $base-padding;
+          margin-right: $base-padding;
         }
         @include media($screen) {
-          flex-direction: row;
+          direction: ltr;
+          position: relative;
+          width: 100%;
+          padding-right: 0;
           img{
             margin-left: 0;
             margin-right: $base-padding;
@@ -44,10 +53,14 @@
         @include media($mobile) {
           display: block;
           overflow: hidden;
+          white-space: auto;
+          white-space: inherit;
+          padding-right: $base-padding;
           img{
             width: 100%;
             height: inherit;
             margin-top: $base-padding/2;
+            margin-bottom: $base-padding/2;
           }
         }
       }

@@ -50,10 +50,10 @@ block content
                 a.link(href="#{val.project[0].url}", target="_blank")
                   i.icon-link
               p= val.project[0].desc
-              h4 Client
+              h4= site.data.global.clientTitle
               p.tags
                 span.tag= val.project[0].client
-              h4 Languages
+              h4= site.data.global.technoTitle
               p.tags
                 each tags in val.project[0].tags
                   span.tag= tags
@@ -72,11 +72,8 @@ block content
               span.tag tf1
             h4= site.data.global.technoTitle
             p.tags
-              span.tag html
-              span.tag css
-              span.tag sass
-              span.tag less
-              span.tag javascript
+              each tags in val.project[0].tags
+                span.tag= tags
     .two-face.separ
       .two-face__left
         .two-face__content
