@@ -8,10 +8,12 @@ block content
     .two-face.mbn.mtl
       .two-face__left
         .two-face__content.two-face__content--no-padding
-          img.face(src='images/face.svg')
+          .face-container
+            img.face(src='images/face.svg')
       .two-face__right
         .two-face__content.two-face__content--no-padding
-          img.face(src='images/face-ascii.svg')
+          .face-container
+            img.face(src='images/face-ascii.svg')
     .two-face.mbl
       .two-face__left
         .two-face__content
@@ -47,8 +49,8 @@ block content
             div.info.sims
               h3 
                 = val.project[0].name
-                a.link(href="#{val.project[0].url}", target="_blank")
-                  i.icon-link
+                //- a.link(href="#{val.project[0].url}", target="_blank")
+                //-   i.icon-link
               p= val.project[0].desc
               h4= site.data.global.clientTitle
               p.tags
@@ -62,19 +64,20 @@ block content
                 img(src="#{imgs}")
         .two-face__right
           .two-face__content
-            h3 
-              | Tf1
-              a.link(href="#", target="_blank")
-                i.icon-link
-            p.description Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            h4= site.data.global.clientTitle
-            p.tags
-              span.tag tf1
-            h4= site.data.global.technoTitle
-            p.tags
-              each tags in val.project[0].tags
-                span.tag= tags
-    .two-face.separ
+            .two-face__scroll
+              h3 
+                = val.project[0].name
+                //- a.link(href="#{val.project[0].url}", target="_blank")
+                //-   i.icon-link
+              p.description Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              h4= site.data.global.clientTitle
+              p.tags
+                span.tag= val.project[0].client
+              h4= site.data.global.technoTitle
+              p.tags
+                each tags in val.project[0].tags
+                  span.tag= tags
+    .two-face.separ.mbl
       .two-face__left
         .two-face__content
           h3.sims.mbs Design
