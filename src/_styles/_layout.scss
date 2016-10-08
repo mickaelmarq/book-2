@@ -77,6 +77,15 @@
         }
       }
     }
+    @include media($screen) {
+      margin-top: $base-padding*3.5;
+      .two-face__left,
+      .two-face__right{
+        .two-face__content{
+          padding-top: $base-padding*4;
+        }
+      }
+    }
     .two-face__left .two-face__content{
       &:before{
         content: "-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_";
