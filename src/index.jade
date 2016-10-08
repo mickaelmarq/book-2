@@ -16,116 +16,96 @@ block content
       .two-face__left
         .two-face__content
           h1 
-            | Mickaël
-            span.sims  Marquez
+            = site.data.global.firstName 
+            | 
+            span.sims= site.data.global.lastName 
           h2 
-            | UI/UX & Graphic Designer
+            = site.data.global.designTitle
             br.sims
-            span.sims  Front-End Developer
-          p Freelance
-          p Paris
-          a.sims(href="mailto:marquez.mickael@gmail.com") marquez.mickael@gmail.com 
-          a.sims(href="tel:+33609428050") +336 09 42 80 50
-          a.social(href="https://dribbble.com/mickaelmarquez", target="_blank")
+            span.sims= site.data.global.devTitle
+          p= site.data.global.function
+          p= site.data.global.city
+          a.sims(href="mailto:#{site.data.global.mail}")= site.data.global.mail
+          a.sims(href="tel:#{site.data.global.tel}")= site.data.global.tel
+          a.social(href="#{site.data.global.dribbbleUrl}", target="_blank")
             i.icon-dribbble
-          a.social.sims(href="https://github.com/mickaelmarq", target="_blank")
+          a.social.sims(href="#{site.data.global.githubUrl}", target="_blank")
             i.icon-github
       .two-face__right
         .two-face__content
-          h1 Marquez
-          h2 Front-End Developer
-          a(href="mailto:marquez.mickael@gmail.com") marquez.mickael@gmail.com 
-          a(href="tel:+33609428050") +336 09 42 80 50
-          a.social(href="https://github.com/mickaelmarq", target="_blank")
+          h1= site.data.global.lastName
+          h2= site.data.global.devTitle
+          a(href="mailto:#{site.data.global.mail}")= site.data.global.mail
+          a(href="tel:#{site.data.global.tel}")= site.data.global.tel
+          a.social(href="#{site.data.global.githubUrl}", target="_blank")
             i.icon-github
-    .two-face.separ
-      .two-face__left
-        .two-face__content
-          h3.sims.mbs Design
-          h4 Compétences
-          p.tags
-            span.tag UI
-            span.tag UX
-            span.tag logo
-            span.tag illustration
-          h4 Outils
-          p.tags
-            span.tag Illustrator
-            span.tag Photoshop
-            span.tag InDesign
-            span.tag Sketch
-          div.sims
-            h3.mbs.mtm Dev
-            h4 Languages
-            p.tags
-              span.tag html
-              span.tag css
-              span.tag sass
-              span.tag less
-              span.tag javascript
-            h4 Frameworks
-            p.tags
-              span.tag angular
-              span.tag ionic
-              span.tag meteor
-              span.tag symfony
-              span.tag gulp
-              span.tag git
-      .two-face__right
-        .two-face__content
-          h4 Languages
-          p.tags
-            span.tag html
-            span.tag css
-            span.tag sass
-            span.tag less
-            span.tag javascript
-          h4 Frameworks
-          p.tags
-            span.tag angular
-            span.tag ionic
-            span.tag meteor
-            span.tag symfony
-            span.tag gulp
-            span.tag git
-    each val in [1, 2, 3, 4, 5]
+            
+    each val in site.data.projects
       .two-face.separ.work
         .two-face__left
           .two-face__content
             div.info.sims
               h3 
-                | TF1
-                a.link(href="#", target="_blank")
+                = val.project[0].name
+                a.link(href="#{val.project[0].url}", target="_blank")
                   i.icon-link
-              p.description Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              p= val.project[0].desc
               h4 Client
               p.tags
-                span.tag tf1
+                span.tag= val.project[0].client
               h4 Languages
               p.tags
-                span.tag html
-                span.tag css
-                span.tag sass
-                span.tag less
-                span.tag javascript
+                each tags in val.project[0].tags
+                  span.tag= tags
             .work__img-container
-              img(src="https://d13yacurqjgara.cloudfront.net/users/239301/screenshots/1788738/ligthhouse.png")
-              img(src="https://d13yacurqjgara.cloudfront.net/users/239301/screenshots/2498621/dribbbleshot.png")
-              img(src="https://d13yacurqjgara.cloudfront.net/users/239301/screenshots/2989587/box.png")
+              each imgs in val.project[0].images
+                img(src="#{imgs}")
         .two-face__right
           .two-face__content
             h3 
-              | TF1
+              | Tf1
               a.link(href="#", target="_blank")
                 i.icon-link
             p.description Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            h4 Client
+            h4= site.data.global.clientTitle
             p.tags
               span.tag tf1
-            h4 Languages
+            h4= site.data.global.technoTitle
             p.tags
               span.tag html
               span.tag css
               span.tag sass
               span.tag less
               span.tag javascript
+    .two-face.separ
+      .two-face__left
+        .two-face__content
+          h3.sims.mbs Design
+          h4= site.data.global.skillsTitle
+          p.tags
+            each val in site.data.global.skills
+              span.tag= val
+          h4= site.data.global.toolsTitle
+          p.tags
+            each val in site.data.global.tools
+              span.tag= val
+          div.sims
+            h3.mbs.mtm Dev
+            h4= site.data.global.langsTitle
+            p.tags
+              each val in site.data.global.langs
+                span.tag= val
+            h4= site.data.global.frameworksTitle
+            p.tags
+              each val in site.data.global.frameworks
+                span.tag= val
+      .two-face__right
+        .two-face__content
+          h4= site.data.global.langsTitle
+          p.tags
+            each val in site.data.global.langs
+              span.tag= val
+          h4= site.data.global.frameworksTitle
+          p.tags
+            each val in site.data.global.frameworks
+              span.tag= val

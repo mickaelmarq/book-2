@@ -1,0 +1,38 @@
+firstName: Mickaël
+lastName: Marquez
+designTitle: UI/UX & Graphic Designer
+devTitle: Front-End Developer
+function: Freelance
+city: Paris
+mail: marquez.mickael@gmail.com
+tel: +336 09 42 80 50
+dribbbleUrl: https://dribbble.com/mickaelmarquez
+githubUrl: https://github.com/mickaelmarq
+skillsTitle: Compétences
+skills:
+  - UI
+  - UX
+  - Logo
+  - Illustration
+toolsTitle: Outils
+tools:
+  - Illustrator
+  - Photoshop
+  - InVision
+  - Sketch
+langsTitle: Langague
+langs:
+  - html
+  - css
+  - less
+  - sass
+  - js
+frameworksTitle: Frameworks
+frameworks:
+  - angular
+  - ionic
+  - meteor
+  - gulp
+  - git
+clientTitle: Client
+technoTitle: Techno
