@@ -24,7 +24,7 @@ $screen-width         : 900px;
 $tablet-width         : 768px;
 $mobile-width         : 480px;
 
-$image-height         : 360px;
+$image-height         : 380px;
 
 $main                 : new-breakpoint(min-width $screen-width);
 $screen               : new-breakpoint(max-width $screen-width 9);

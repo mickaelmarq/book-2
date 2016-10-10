@@ -1,11 +1,12 @@
 extends _layouts/base
 
-include _modules/link/link
+include _modules/desc/desc
+include _modules/skills/skills
 
 block content
   .wrapper
     .background
-    .two-face.mbn.mtl
+    .two-face.mbn.mtm
       .two-face__left
         .two-face__content.two-face__content--no-padding
           .face-container
@@ -41,71 +42,28 @@ block content
           a(href="tel:#{site.data.global.tel}")= site.data.global.tel
           a.social(href="#{site.data.global.githubUrl}", target="_blank")
             i.icon-github
+              
+    .two-face.separ.mbl
+      .two-face__left
+        .two-face__content
+          
+          +skillsDesign()
+          div.sims
+            +skillsDev()
+      .two-face__right
+        .two-face__content
+          +skillsDev()
             
     each val in site.data.projects
       .two-face.separ.work
         .two-face__left
           .two-face__content
             div.info.sims
-              h3 
-                = val.project[0].name
-                //- a.link(href="#{val.project[0].url}", target="_blank")
-                //-   i.icon-link
-              p= val.project[0].desc
-              h4= site.data.global.clientTitle
-              p.tags
-                span.tag= val.project[0].client
-              h4= site.data.global.technoTitle
-              p.tags
-                each tags in val.project[0].tags
-                  span.tag= tags
+              +desc(val)
             .work__img-container
               each imgs in val.project[0].images
                 img(src="#{imgs}")
         .two-face__right
           .two-face__content
             .two-face__scroll
-              h3 
-                = val.project[0].name
-                //- a.link(href="#{val.project[0].url}", target="_blank")
-                //-   i.icon-link
-              p.description Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              h4= site.data.global.clientTitle
-              p.tags
-                span.tag= val.project[0].client
-              h4= site.data.global.technoTitle
-              p.tags
-                each tags in val.project[0].tags
-                  span.tag= tags
-    .two-face.separ.mbl
-      .two-face__left
-        .two-face__content
-          h3.sims.mbs Design
-          h4= site.data.global.skillsTitle
-          p.tags
-            each val in site.data.global.skills
-              span.tag= val
-          h4= site.data.global.toolsTitle
-          p.tags
-            each val in site.data.global.tools
-              span.tag= val
-          div.sims
-            h3.mbs.mtm Dev
-            h4= site.data.global.langsTitle
-            p.tags
-              each val in site.data.global.langs
-                span.tag= val
-            h4= site.data.global.frameworksTitle
-            p.tags
-              each val in site.data.global.frameworks
-                span.tag= val
-      .two-face__right
-        .two-face__content
-          h4= site.data.global.langsTitle
-          p.tags
-            each val in site.data.global.langs
-              span.tag= val
-          h4= site.data.global.frameworksTitle
-          p.tags
-            each val in site.data.global.frameworks
-              span.tag= val
+              +desc(val)

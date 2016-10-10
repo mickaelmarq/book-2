@@ -76,16 +76,19 @@
           }
         }
       }
-      &.max{
-        @include media($main) {
-          .work__img-container{
-            transform: scale(1.45);
-            z-index: 9999999;
-            padding-left: 30%;
-          }
-        }
-      }
-
     }
   }
+}
+
+.scale-ok{
+  .max{
+    @include media($main) {
+      .work__img-container{
+        transform: scale(1.45);
+        z-index: 9999999;
+        padding-left: 35% !important;
+      }
+    }
+  }
+
 }

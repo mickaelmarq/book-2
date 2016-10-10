@@ -8,31 +8,25 @@ mail: marquez.mickael@gmail.com
 tel: +336 09 42 80 50
 dribbbleUrl: https://dribbble.com/mickaelmarquez
 githubUrl: https://github.com/mickaelmarq
-skillsTitle: Compétences
-skills:
-  - UI
-  - UX
+
+skillsDesignTitle: Compétences Design
+skillsDesign:
+  - UI/UX Design
+  - Prototypage
   - Logo
   - Illustration
-toolsTitle: Outils
-tools:
-  - Illustrator
-  - Photoshop
-  - InVision
-  - Sketch
-langsTitle: Langague
-langs:
-  - html
-  - css
-  - less
+
+skillsDevTitle: Compétences Dev
+skillsDev:
   - sass
-  - js
-frameworksTitle: Frameworks
-frameworks:
+  - less
   - angular
   - ionic
   - meteor
   - gulp
   - git
+  - ...
+
+roleTitle: Rôle
 clientTitle: Client
-technoTitle: Techno
+technoTitle: Languages

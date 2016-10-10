@@ -2,8 +2,10 @@
   - name: tf1
     url:
     desc: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    roles:
+      - Designer
     client: tf1
-    tags:
+    technos:
       - html
       - sass
       - bourbon
@@ -18,8 +20,11 @@
   - name: Sourceat
     url:
     desc: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    roles:
+      - Designer
+      - Dev Front
     client: tf1
-    tags:
+    technos:
       - html
       - sass
       - bourbon
@@ -35,8 +40,10 @@
   - name: Homebyme
     url:
     desc: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    roles:
+      - Designer
     client: tf1
-    tags:
+    technos:
       - html
       - sass
       - bourbon
@@ -52,8 +59,10 @@
   - name: Clipptown
     url:
     desc: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    roles:
+      - Designer
     client: Clipptown
-    tags:
+    technos:
       - html
       - sass
       - bourbon
@@ -69,8 +78,12 @@
   - name: DocDocDoc
     url:
     desc: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    roles:
+      - Co-Founder
+      - Designer
+      - Dev Front
     client:
-    tags:
+    technos:
       - html
       - sass
       - bourbon
@@ -86,8 +99,10 @@
   - name: Memory Life
     url:
     desc: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    roles:
+      - Designer
     client: Orange
-    tags:
+    technos:
       - html
       - sass
       - bourbon

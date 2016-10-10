@@ -4,14 +4,12 @@
 'use strict';
 
 var $ = require('jquery');
-var Link = require('../_modules/link/link');
 
-$(function() {
-  new Link(); // Activate Link modules logic
-  console.log('Welcome to Yeogurt!');
-});
 
 if(typeof InstallTrigger !== 'undefined'){
+
+  //IF Firefox
+
   $('.work__img-container').scroll(function() {
     var offset = -($(this).scrollLeft());
     var asside = $(this).closest('.work').find('.two-face__scroll');
@@ -22,6 +20,7 @@ if(typeof InstallTrigger !== 'undefined'){
       $(this).closest('.two-face__content').removeClass('max');
     }
   });
+
 }else{
   $('.work__img-container').scroll(function() {
     var offset = -($(this).scrollLeft() - $(this).prop("scrollWidth") + $(this).innerWidth());
@@ -34,19 +33,22 @@ if(typeof InstallTrigger !== 'undefined'){
       $(this).closest('.two-face__content').removeClass('max');
     }
   });
+
+  $('.wrapper').addClass('scale-ok');
+
 }
 
 // $(window).scroll(function() {
 //   $('.two-face__content').removeClass('max');
 // });
 
+
+//drag
 var curDown = false,
     curXPos = 0;
 $('.work__img-container').mousemove(function(m){
   if(curDown === true){
-   $(this).scrollLeft($(this).scrollLeft() + (curXPos - m.pageX)/4);
-   console.log($(this).scrollLeft());
-   console.log((curXPos - m.pageX));
+   $(this).scrollLeft($(this).scrollLeft() + (curXPos - m.pageX)/10);
   }
 });
 

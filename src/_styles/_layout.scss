@@ -39,10 +39,7 @@
   .two-face__right{
     position: relative;
     width: 50%;
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    overflow: hidden;
+    overflow-y: hidden;
   }
   .two-face__left{
     text-align: right;
@@ -52,6 +49,7 @@
     }
     @include media($screen) {
       text-align: center;
+      width: 100%;
     }
   }
   .two-face__right{

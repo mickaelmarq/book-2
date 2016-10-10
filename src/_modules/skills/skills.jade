@@ -1,0 +1,11 @@
+mixin skillsDesign()
+  h4= site.data.global.skillsDesignTitle
+  p.tags
+    each val in site.data.global.skillsDesign
+      span.tag= val
+      
+mixin skillsDev()
+  h4= site.data.global.skillsDevTitle
+  p.tags
+    each val in site.data.global.skillsDev
+      span.tag= val
