@@ -4,16 +4,16 @@ mixin desc(val)
     //- a.link(href="#{val.project[0].url}", target="_blank")
     //-   i.icon-link
   p.description= val.project[0].desc
+  - if (val.project[0].client !== null) {
+      h4= site.data.global.clientTitle
+      p.tags
+        span.tag= val.project[0].client
+  -}
   - if (val.project[0].roles !== null) {
     h4= site.data.global.roleTitle
     p.tags
       each role in val.project[0].roles
         span.tag= role
-  -}
-  - if (val.project[0].client !== null) {
-      h4= site.data.global.clientTitle
-      p.tags
-        span.tag= val.project[0].client
   -}
   - if (val.project[0].technos !== null) {
     h4= site.data.global.technoTitle

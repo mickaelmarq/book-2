@@ -1,83 +1,77 @@
-- project:
-  - name: tf1
-    url:
-    desc: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    roles:
-      - Designer
-    client: tf1
-    technos:
-      - html
-      - sass
-      - bourbon
-      - js
-      - angular
-    images:
-      - /images/projects/tf1/project-list.png
-      - /images/projects/tf1/project-list2.png
-      - /images/projects/tf1/project-detail.png
-      - /images/projects/tf1/veille.png
-- project:
-  - name: Sourceat
-    url:
-    desc: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    roles:
-      - Designer
-      - Dev Front
-    client: tf1
-    technos:
-      - html
-      - sass
-      - bourbon
-      - js
-      - angular
-    images:
-      - /images/projects/sourceat/00_01_onBoarding.png
-      - /images/projects/sourceat/01_home.png
-      - /images/projects/sourceat/02_produits_01.png
-      - /images/projects/sourceat/03_panier.png
-      - /images/projects/sourceat/05_menu.png
+# - project:
+#   - name: tf1
+#     url:
+#     desc: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+#     roles:
+#       - Designer
+#     client: tf1
+#     technos:
+#       - html
+#       - sass
+#       - bourbon
+#       - js
+#       - angular
+#     images:
+#       - /images/projects/tf1/project-list.png
+#       - /images/projects/tf1/project-list2.png
+#       - /images/projects/tf1/project-detail.png
+#       - /images/projects/tf1/veille.png
+
+# - project:
+#   - name: Sourceat
+#     url:
+#     desc: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+#     roles:
+#       - Designer
+#       - Dev Front
+#     client: tf1
+#     technos:
+#       - html
+#       - sass
+#       - bourbon
+#       - js
+#       - angular
+#     images:
+#       - /images/projects/sourceat/00_01_onBoarding.png
+#       - /images/projects/sourceat/01_home.png
+#       - /images/projects/sourceat/02_produits_01.png
+#       - /images/projects/sourceat/03_panier.png
+#       - /images/projects/sourceat/05_menu.png
+
 - project:
   - name: Homebyme
     url:
-    desc: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    desc: Landing page de l'application d'architecture d'intérieur 3D.
     roles:
       - Designer
-    client: tf1
+    client: 3DVIA - Dassault Systèmes
     technos:
-      - html
-      - sass
-      - bourbon
-      - js
-      - angular
     images:
       - /images/projects/homebyme/01-home.png
       - /images/projects/homebyme/02-inspirer.png
       - /images/projects/homebyme/03-creer.png
       - /images/projects/homebyme/04-echanger.png
       - /images/projects/homebyme/05-projeter.png
+
 - project:
   - name: Clipptown
     url:
-    desc: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    desc: Un contenu original géolocalisé à personnaliser et à partager.
     roles:
       - Designer
-    client: Clipptown
+    client:
     technos:
-      - html
-      - sass
-      - bourbon
-      - js
-      - angular
     images:
-      - /images/projects/clipptown/01_HOME_01.png
-      - /images/projects/clipptown/02_NEWS.png
-      - /images/projects/clipptown/05_GUIDES.png
-      - /images/projects/clipptown/07_ADDCLIPP.png
-      - /images/projects/clipptown/10_MAP.png
+      - /images/projects/clipptown/01_HOME_01.jpg
+      - /images/projects/clipptown/07_ADDCLIPP.jpg
+      - /images/projects/clipptown/02_NEWS.jpg
+      - /images/projects/clipptown/05_GUIDES.jpg
+      - /images/projects/clipptown/10_MAP.jpg
+
 - project:
   - name: DocDocDoc
     url:
-    desc: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    desc: DocDocDoc est la première application de messagerie pensée pour les praticiens de santé. Un outil professionnel, aussi simple qu’un texto, enrichi de fonctionnalités sur-mesures.
     roles:
       - Co-Founder
       - Designer
@@ -86,32 +80,92 @@
     technos:
       - html
       - sass
-      - bourbon
-      - js
+      - ionic
       - angular
     images:
-      - /images/projects/docdocdoc/01_CONTACT.png
-      - /images/projects/docdocdoc/02_MESSAGES.png
-      - /images/projects/docdocdoc/03_FIL_DE_DISCUTION.png
-      - /images/projects/docdocdoc/04_RECHERCHE.png
-      - /images/projects/docdocdoc/05_RENDEZ_VOUS.png
+      - /images/projects/docdocdoc/1.jpeg
+      - /images/projects/docdocdoc/2.jpeg
+      - /images/projects/docdocdoc/3.jpeg
+      - /images/projects/docdocdoc/4.jpeg
+      - /images/projects/docdocdoc/5.jpeg
+
+- project:
+  - name: Calculatrice
+    url:
+    desc: Ce projet a pour but de repenser la calculatrice en y ajoutant notamment un historique de calculs, la possibilité de labéliser les chiffres ainsi que la sauvegarde des calculs.
+    roles:
+      - Designer
+      - Dev Front
+    client:
+    technos:
+      - html
+      - sass
+      - ionic
+      - angular
+    images:
+      - /images/projects/calculatrice/calculatrice1.png
+      - /images/projects/calculatrice/calculatrice2.png
+      - /images/projects/calculatrice/calculatrice3.png
+      - /images/projects/calculatrice/calculatrice4.png
+
+- project:
+  - name: Startup Innovation
+    url:
+    desc: Plate-forme de projet de la Web School Factory. Elle permet de regrouper les élèves autour d'idées et de projets varier/variés.
+    roles:
+      - Designer
+      - Dev Front
+    client: Innovation factory
+    technos:
+      - html
+      - sass
+      - meteor
+    images:
+      - /images/projects/startupInnovation/project.jpg
+      - /images/projects/startupInnovation/detail.jpg
+
 - project:
   - name: Memory Life
     url:
-    desc: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    desc: Le cloud photo/vidéo par orange qui offre une expérience d'immersion dans ses souvenirs.
     roles:
       - Designer
     client: Orange
     technos:
-      - html
-      - sass
-      - bourbon
-      - js
-      - angular
     images:
-      - /images/projects/memorylife/101_HOME_01_MENU_OUVERT.png
-      - /images/projects/memorylife/101_HOME_02_MENU_FERMER.png
-      - /images/projects/memorylife/102_ALBUM.png
-      - /images/projects/memorylife/105_REGIONS_02.png
-      - /images/projects/memorylife/110_RECHERCHE.png
-      - /images/projects/memorylife/111_DETAIL_02_INFOS.png
+      - /images/projects/memorylife/101_HOME_01_MENU_OUVERT.jpg
+      - /images/projects/memorylife/101_HOME_02_MENU_FERMER.jpg
+      - /images/projects/memorylife/102_ALBUM.jpg
+      - /images/projects/memorylife/105_REGIONS_02.jpg
+      - /images/projects/memorylife/110_RECHERCHE.jpg
+      - /images/projects/memorylife/111_DETAIL_02_INFOS.jpg
+
+- project:
+  - name: Player Canalplay
+    url:
+    desc: Un player, conçu pour le site CANALPLAY INFINITY fonctionne comme un media player. Il intègre un catalogue complet qui permet de profiter au mieux de ce service de SVOD.
+    roles:
+      - Designer
+    client: Canal+
+    technos:
+    images:
+      - /images/projects/canalPlayer/08-img.jpg
+      - /images/projects/canalPlayer/06-img.jpg
+      - /images/projects/canalPlayer/05-img.jpg
+      - /images/projects/canalPlayer/04-img.jpg
+      - /images/projects/canalPlayer/03-img.jpg
+      - /images/projects/canalPlayer/02-img.jpg
+
+- project:
+  - name: Player Football App
+    url:
+    desc: L'application iPad de CANAL+, destinée aux fans de football, a pour objectif d'apporter du contenu additionnel (vidéos multi-cam, statistiques, notes des joueurs) lors du visionnage d'un match.
+    roles:
+      - Designer
+    client: Canal+
+    technos:
+    images:
+      - /images/projects/canalFootballApp/02-img.jpg
+      - /images/projects/canalFootballApp/03-img.jpg
+      - /images/projects/canalFootballApp/04-img.jpg
+      - /images/projects/canalFootballApp/07-img.jpg
