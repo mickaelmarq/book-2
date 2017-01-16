@@ -24,12 +24,11 @@
 #     roles:
 #       - Designer
 #       - Dev Front
-#     client: tf1
+#     client:
 #     technos:
 #       - html
 #       - sass
-#       - bourbon
-#       - js
+#       - ionic 2
 #       - angular
 #     images:
 #       - /images/projects/sourceat/00_01_onBoarding.png
@@ -111,7 +110,7 @@
 - project:
   - name: Startup Innovation
     url:
-    desc: Plate-forme de projet de la Web School Factory. Elle permet de regrouper les élèves autour d'idées et de projets varier/variés.
+    desc: Plate-forme de projet de la Web School Factory. Elle permet de regrouper les élèves autour d'idées et de projets variés.
     roles:
       - Designer
       - Dev Front
